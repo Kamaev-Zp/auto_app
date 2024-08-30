@@ -1,15 +1,23 @@
+/* Стили для контейнера тарифов */
 .cardContainer {
-  display: grid;
+  display: grid; /* Используйте grid для таблицы */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-  margin: 10px;
+  gap: 10px; 
+  margin: 10px; 
+}
+
+/* Стили для списка */
+.list {
+  list-style-type: none; /* Убирает стандартные маркеры списка */
+  padding: 0; /* Убирает отступы списка */
+  margin: 0; /* Убирает внешние отступы */
 }
 
 .tariffItem {
-  width: 100%;
+  width: 100%; 
   height: 72px;
   background: #fdfdfd;
-  border-radius: 12px;
+  border-radius: 12px; 
   padding: 10px;
   border: 1px solid #cccccc;
   display: flex;
@@ -42,8 +50,9 @@
   color: #525252;
 }
 
+/* Адаптивность */
 @media (max-width: 768px) {
   .cardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* В колонку на мобильных устройствах */
   }
 }
